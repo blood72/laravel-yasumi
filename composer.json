@@ -1,0 +1,49 @@
+{
+    "name": "blood72/laravel-yasumi",
+    "type": "library",
+    "description": "Yasumi for laravel 5",
+    "license": "MIT",
+    "keywords": [
+        "Yasumi",
+        "Laravel"
+    ],
+    "authors": [
+        {
+          "name": "blood72",
+          "email": "blood72@naver.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/blood72/laravel-yasumi/issues",
+        "source": "https://github.com/blood72/laravel-yasumi"
+    },
+    "require": {
+        "php": ">=7.1.3",
+        "azuyalabs/yasumi": "2.*",
+        "illuminate/support": ">=5.0,<5.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blood72\\Yasumi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blood72\\Yasumi\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blood72\\Yasumi\\YasumiServiceProvider"
+            ],
+            "aliases": {
+                "Yasumi": "Blood72\\Yasumi\\YasumiFacade"
+            }
+        }
+    }
+}
